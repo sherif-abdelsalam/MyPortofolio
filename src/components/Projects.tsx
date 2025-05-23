@@ -2,11 +2,10 @@ import { useState, useEffect, useMemo } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
-  ArrowRight,
-  ArrowUpToLine,
+  ArrowUpRightFromSquareIcon,
   ChevronLeft,
   ChevronRight,
-  View,
+  LucideArrowUpToLine,
 } from "lucide-react";
 import { projects, type Project } from "../constants/projectsData";
 
@@ -49,7 +48,7 @@ const ProjectCard = ({
             rel="noopener noreferrer"
             className="flex items-center"
           >
-            Github <ArrowRight className="ml-2 h-4 w-4" />
+            Github <LucideArrowUpToLine className="ml-2 h-4 w-4" />
           </a>
         </Button>
 
@@ -61,7 +60,7 @@ const ProjectCard = ({
               rel="noopener noreferrer"
               className="flex items-center ml-4"
             >
-              Live Demo <ArrowUpToLine className="ml-2 h-4 w-4" />
+              Live Demo <ArrowUpRightFromSquareIcon className="ml-2 h-4 w-4" />
             </a>
           </Button>
         )}

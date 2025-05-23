@@ -1,4 +1,12 @@
-import { Github, Linkedin, Mail, ChevronDown, Eye } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ChevronDown,
+  CircleArrowOutUpRight,
+  MailPlus,
+  ArrowDownCircleIcon,
+} from "lucide-react";
 import { useEffect, useState, useCallback, useMemo, memo } from "react";
 import myLinks from "../constants/socialLinks";
 
@@ -72,27 +80,27 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-10 md:mb-12 justify-center items-center max-w-2xl mx-auto text-sm sm:text-lg">
           <a
-            href="#contact"
-            className="group w-full sm:w-auto inline-flex items-center justify-center border-2 border-slate-900 px-6 py-2 sm:py-3 font-medium text-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
-          >
-            CONTACT ME
-          </a>
-
-          <a
-            href="#portfolio"
-            className="group w-full sm:w-auto inline-flex items-center justify-center border-2 border-slate-900 bg-slate-900 text-white px-6 py-2 sm:py-3 font-medium hover:bg-white hover:text-slate-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
-          >
-            VIEW MY WORK
-          </a>
-
-          <a
             href={myLinks.resume}
             target="_blank"
             rel="noopener noreferrer"
             className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 font-semibold bg-orange-600 text-white px-6 py-2 sm:py-3 border-2 border-orange-600 hover:bg-white hover:text-orange-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2"
           >
-            <Eye size={20} />
+            <CircleArrowOutUpRight size={20} />
             View Resume
+          </a>
+          <a
+            href="#portfolio"
+            className="group w-full sm:w-auto inline-flex items-center justify-center border-2 border-slate-900 bg-slate-900 text-white px-6 py-2 sm:py-3 font-medium hover:bg-white hover:text-slate-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
+          >
+            View My Work &nbsp;
+            <ArrowDownCircleIcon size={20} />
+          </a>
+          <a
+            href="#contact"
+            className="group w-full sm:w-auto inline-flex items-center justify-center border-2 border-slate-900 px-6 py-2 sm:py-3 font-medium text-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
+          >
+            Contact Me &nbsp;
+            <MailPlus size={20} />
           </a>
         </div>
 

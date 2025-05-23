@@ -79,7 +79,7 @@ const Contact = () => {
         <div className="lg:col-span-1">
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
-              <Mail className="h-6 w-6 text-gray-600" />
+              <Mail className="h-6 w-6 text-orange-600" />
               <div>
                 <h3 className="text-lg font-medium">Email</h3>
                 <p className="text-gray-600">{myLinks.email.slice(7)}</p>
@@ -87,7 +87,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <Phone className="h-6 w-6 text-gray-600" />
+              <Phone className="h-6 w-6 text-orange-600" />
               <div>
                 <h3 className="text-lg font-medium">Phone</h3>
                 <p className="text-gray-600">{myLinks.phone}</p>
@@ -95,7 +95,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <MapPin className="h-6 w-6 text-gray-600" />
+              <MapPin className="h-6 w-6 text-orange-600" />
               <div>
                 <h3 className="text-lg font-medium">Location</h3>
                 <p className="text-gray-600">{myLinks.location}</p>

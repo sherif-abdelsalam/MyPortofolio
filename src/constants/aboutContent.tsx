@@ -24,7 +24,7 @@ export const aboutContent = {
       {
         title: "B.Sc. Computer Science",
         company: "University of Zagazig",
-        period: "2021 - 2025",
+        period: "Oct 2021 - June 2025",
         achievements: [
           "Specialized in Software Development and Computer Science",
           "Graduated with GPA: (3.74/4.0)",

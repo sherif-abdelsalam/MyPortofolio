@@ -6,17 +6,17 @@ const About = () => {
   const lineClassName = "relative pl-8 border-l-2 border-gray-300";
   return (
     <section id="about" className="py-16 md:py-24 px-4 md:px-6 bg-white">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto ">
         <div className="mb-16 md:mb-24 text-center">
           <h2 className="section-title mx-auto">ABOUT ME</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
           {/* Left Column - Get to know me */}
           <div className="space-y-6">
-            <h3 className="text-xl md:text-xl font-bold">
+            <h3 className="text-2xl font-bold text-orange-600">
               {aboutContent.introduction.title}
             </h3>
-            <div className="space-y-4 text-gray-700">
+            <div className="text-xl space-y-4 text-gray-700">
               {aboutContent.introduction.paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
@@ -25,10 +25,10 @@ const About = () => {
 
           {/* Right Column - Background */}
           <div className="space-y-6">
-            <h3 className="text-xl md:text-xl font-bold">
+            <h3 className="text-2xl font-bold text-orange-600">
               {aboutContent.background.title}
             </h3>
-            <div className="space-y-6 text-gray-700">
+            <div className="text-xl space-y-6 text-gray-700">
               {aboutContent.background.experience.map((item, index) => (
                 <div key={index} className={lineClassName}>
                   <BulletPoint />
@@ -56,7 +56,7 @@ export default About;
 const BulletPoint = () => {
   return (
     <div className="absolute left-[-9px] top-0">
-      <div className="w-4 h-4 bg-black rounded-full"></div>
+      <div className="w-4 h-4 bg-orange-600 rounded-full"></div>
     </div>
   );
 };
