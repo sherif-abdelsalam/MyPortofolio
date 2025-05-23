@@ -82,7 +82,7 @@
 }
 
 .section-title {
-  @apply text-2xl font-bold uppercase tracking-wider inline-block border border-black px-8 py-2;
+  @apply text-2xl font-bold uppercase tracking-wider inline-block border border-black dark:border-white px-8 py-2 transition-colors duration-300;
 }
 
 .hero-pattern {

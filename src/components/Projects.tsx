@@ -17,7 +17,7 @@ const ProjectCard = ({
   link,
   demo,
 }: Project) => (
-  <Card className="overflow-hidden group">
+  <Card className="overflow-hidden group bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 transition-all duration-300">
     <div className="h-64 overflow-hidden">
       <div
         className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -25,13 +25,17 @@ const ProjectCard = ({
       />
     </div>
     <CardContent className="p-6">
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm mb-4">{description}</p>
+      <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white transition-colors duration-300">
+        {title}
+      </h3>
+      <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 transition-colors duration-300">
+        {description}
+      </p>
       <div className="flex flex-wrap gap-2 mb-4">
         {tech.map((item, idx) => (
           <span
             key={idx}
-            className="bg-gray-200 text-gray-600 text-xs px-2 py-1 rounded"
+            className="bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs px-2 py-1 rounded transition-colors duration-300"
           >
             {item}
           </span>
@@ -40,7 +44,7 @@ const ProjectCard = ({
       <div className="flex items-start justify-between">
         <Button
           variant="outline"
-          className="border-black hover:bg-black hover:text-white transition-colors"
+          className="border-black dark:border-gray-300 hover:bg-black dark:hover:bg-gray-700 hover:text-white dark:hover:text-white transition-colors"
         >
           <a
             href={link}
@@ -53,7 +57,7 @@ const ProjectCard = ({
         </Button>
 
         {demo && (
-          <Button className="bg-orange-600 hover:bg-orange-700 text-white transition-colors">
+          <Button className="bg-orange-600 dark:bg-orange-500 hover:bg-orange-700 dark:hover:bg-orange-600 text-white transition-colors">
             <a
               href={demo}
               target="_blank"
@@ -129,10 +133,15 @@ const Projects = () => {
   };
 
   return (
-    <section id="portfolio" className="py-20 px-6 bg-white">
+    <section
+      id="portfolio"
+      className="py-20 px-6 bg-white dark:bg-gray-900 transition-colors duration-300"
+    >
       <div className="container mx-auto text-center mb-16">
-        <div className="section-title mx-auto">Projects</div>
-        <p className="mt-8 max-w-3xl mx-auto text-gray-600">
+        <div className="section-title mx-auto text-gray-900 dark:text-white">
+          Projects
+        </div>
+        <p className="mt-8 max-w-3xl mx-auto text-gray-600 dark:text-gray-300 transition-colors duration-300">
           Here are some of the projects I've built. Each project demonstrates
           different skills and technologies.
         </p>
@@ -142,7 +151,7 @@ const Projects = () => {
         {/* Navigation Buttons */}
         <button
           onClick={prevSlide}
-          className="absolute -left-4 top-1/2 bg-orange-600  hover:scale-110 rounded-full p-3 transition-colors z-10 border-[6px] border-white"
+          className="absolute -left-4 top-1/2 bg-orange-600 dark:bg-orange-500 hover:scale-110 rounded-full p-3 transition-all duration-300 z-10 border-[6px] border-white dark:border-gray-900"
           aria-label="Previous slide"
         >
           <ChevronLeft className="w-6 h-6 text-white" />
@@ -150,7 +159,7 @@ const Projects = () => {
 
         <button
           onClick={nextSlide}
-          className="absolute -right-4 top-1/2 bg-orange-600  hover:scale-110 rounded-full p-3 transition-colors z-10 border-[6px] border-white"
+          className="absolute -right-4 top-1/2 bg-orange-600 dark:bg-orange-500 hover:scale-110 rounded-full p-3 transition-all duration-300 z-10 border-[6px] border-white dark:border-gray-900"
           aria-label="Next slide"
         >
           <ChevronRight className="w-6 h-6 text-white" />

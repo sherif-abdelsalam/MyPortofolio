@@ -66,10 +66,15 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-gray-100">
+    <section
+      id="contact"
+      className="py-20 px-6 bg-gray-100 dark:bg-gray-800 transition-colors duration-300"
+    >
       <div className="container mx-auto text-center mb-16">
-        <div className="section-title mx-auto">CONTACT</div>
-        <p className="mt-8 max-w-3xl mx-auto text-gray-600">
+        <div className="section-title mx-auto text-gray-900 dark:text-white">
+          CONTACT
+        </div>
+        <p className="mt-8 max-w-3xl mx-auto text-gray-600 dark:text-gray-300 transition-colors duration-300">
           Have a project in mind or want to chat? Feel free to reach out through
           the form below or using my contact information.
         </p>
@@ -79,26 +84,38 @@ const Contact = () => {
         <div className="lg:col-span-1">
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
-              <Mail className="h-6 w-6 text-orange-600" />
+              <Mail className="h-6 w-6 text-orange-600 dark:text-orange-400" />
               <div>
-                <h3 className="text-lg font-medium">Email</h3>
-                <p className="text-gray-600">{myLinks.email.slice(7)}</p>
+                <h3 className="text-lg font-medium text-gray-900 dark:text-white transition-colors duration-300">
+                  Email
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 transition-colors duration-300">
+                  {myLinks.email.slice(7)}
+                </p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <Phone className="h-6 w-6 text-orange-600" />
+              <Phone className="h-6 w-6 text-orange-600 dark:text-orange-400" />
               <div>
-                <h3 className="text-lg font-medium">Phone</h3>
-                <p className="text-gray-600">{myLinks.phone}</p>
+                <h3 className="text-lg font-medium text-gray-900 dark:text-white transition-colors duration-300">
+                  Phone
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 transition-colors duration-300">
+                  {myLinks.phone}
+                </p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <MapPin className="h-6 w-6 text-orange-600" />
+              <MapPin className="h-6 w-6 text-orange-600 dark:text-orange-400" />
               <div>
-                <h3 className="text-lg font-medium">Location</h3>
-                <p className="text-gray-600">{myLinks.location}</p>
+                <h3 className="text-lg font-medium text-gray-900 dark:text-white transition-colors duration-300">
+                  Location
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 transition-colors duration-300">
+                  {myLinks.location}
+                </p>
               </div>
             </div>
           </div>
@@ -114,7 +131,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="border-gray-300 focus:border-black focus:ring-black"
+                  className="border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:border-black dark:focus:border-orange-400 focus:ring-black dark:focus:ring-orange-400 transition-colors duration-300"
                 />
               </div>
               <div>
@@ -125,7 +142,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="border-gray-300 focus:border-black focus:ring-black"
+                  className="border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:border-black dark:focus:border-orange-400 focus:ring-black dark:focus:ring-orange-400 transition-colors duration-300"
                 />
               </div>
             </div>
@@ -137,7 +154,7 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="border-gray-300 focus:border-black focus:ring-black"
+                className="border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:border-black dark:focus:border-orange-400 focus:ring-black dark:focus:ring-orange-400 transition-colors duration-300"
               />
             </div>
 
@@ -148,14 +165,14 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="h-32 border-gray-300 focus:border-black focus:ring-black"
+                className="h-32 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:border-black dark:focus:border-orange-400 focus:ring-black dark:focus:ring-orange-400 transition-colors duration-300"
               />
             </div>
 
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-black text-white hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-black dark:bg-gray-700 text-white hover:bg-gray-800 dark:hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-300"
             >
               {isSubmitting ? (
                 <>

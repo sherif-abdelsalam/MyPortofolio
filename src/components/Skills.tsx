@@ -6,11 +6,11 @@ const SkillIcon = ({ name, icon, color }: Skill) => (
     <div
       className={`w-16 h-16 ${
         color || ""
-      } flex items-center justify-center mb-3 rounded-lg bg-white shadow-sm`}
+      } flex items-center justify-center mb-3 rounded-lg bg-white dark:bg-gray-700 shadow-sm transition-colors duration-300`}
     >
       {icon}
     </div>
-    <span className="text-sm font-medium text-gray-700 text-center">
+    <span className="text-sm font-medium text-gray-700 dark:text-gray-300 text-center transition-colors duration-300">
       {name}
     </span>
   </div>
@@ -18,9 +18,14 @@ const SkillIcon = ({ name, icon, color }: Skill) => (
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 px-6 bg-gray-100">
+    <section
+      id="skills"
+      className="py-20 px-6 bg-gray-100 dark:bg-gray-800 transition-colors duration-300"
+    >
       <div className="container mx-auto text-center">
-        <div className="section-title mx-auto mb-16">Technologies</div>
+        <div className="section-title mx-auto mb-16 text-gray-900 dark:text-white">
+          Technologies
+        </div>
 
         {/* Enhanced Skills Grid Structure */}
         <div className="max-w-7xl mx-auto">
@@ -29,10 +34,10 @@ const Skills = () => {
             {skillsData.slice(0, 2).map((category, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
+                className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300"
               >
                 <h3
-                  className={`text-xl font-bold mb-8 uppercase text-gray-800 border-b-2 ${category.borderColor} pb-2`}
+                  className={`text-xl font-bold mb-8 uppercase text-gray-800 dark:text-gray-200 border-b-2 ${category.borderColor} pb-2 transition-colors duration-300`}
                 >
                   {category.title}
                 </h3>
@@ -53,8 +58,8 @@ const Skills = () => {
           {/* Secondary Skills - Learning & Others (Bottom Row with Different Layout) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Learning Section - Smaller card */}
-            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-bold mb-8 uppercase text-gray-800 border-b-2 border-purple-500 pb-2">
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-bold mb-8 uppercase text-gray-800 dark:text-gray-200 border-b-2 border-purple-500 pb-2 transition-colors duration-300">
                 Learning
               </h3>
               <div className="grid grid-cols-1 gap-6">
@@ -70,8 +75,8 @@ const Skills = () => {
             </div>
 
             {/* Others Section - Larger card spanning 2 columns */}
-            <div className="md:col-span-2 bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-bold mb-8 uppercase text-gray-800 border-b-2 border-orange-500 pb-2">
+            <div className="md:col-span-2 bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-bold mb-8 uppercase text-gray-800 dark:text-gray-200 border-b-2 border-orange-500 pb-2 transition-colors duration-300">
                 Tools & Others
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -89,35 +94,35 @@ const Skills = () => {
 
           {/* Skills Summary Stats */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 text-center transition-all duration-300">
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
                 {skillsData[0].skills.length}
               </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wide">
+              <div className="text-gray-600 dark:text-gray-400 text-sm uppercase tracking-wide transition-colors duration-300">
                 Frontend
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-3xl font-bold text-green-600 mb-2">
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 text-center transition-all duration-300">
+              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">
                 {skillsData[1].skills.length}
               </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wide">
+              <div className="text-gray-600 dark:text-gray-400 text-sm uppercase tracking-wide transition-colors duration-300">
                 Backend
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-3xl font-bold text-purple-600 mb-2">
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 text-center transition-all duration-300">
+              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
                 {skillsData[2].skills.length}
               </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wide">
+              <div className="text-gray-600 dark:text-gray-400 text-sm uppercase tracking-wide transition-colors duration-300">
                 Learning
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-3xl font-bold text-orange-600 mb-2">
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 text-center transition-all duration-300">
+              <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">
                 {skillsData[3].skills.length}
               </div>
-              <div className="text-gray-600 text-sm uppercase tracking-wide">
+              <div className="text-gray-600 dark:text-gray-400 text-sm uppercase tracking-wide transition-colors duration-300">
                 Tools
               </div>
             </div>
