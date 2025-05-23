@@ -72,7 +72,7 @@ const Skills = () => {
             {/* Others Section - Larger card spanning 2 columns */}
             <div className="md:col-span-2 bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl font-bold mb-8 uppercase text-gray-800 border-b-2 border-orange-500 pb-2">
-                Tools & Technologies
+                Tools & Others
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                 {skillsData[3].skills.map((skill, skillIndex) => (
@@ -90,25 +90,33 @@ const Skills = () => {
           {/* Skills Summary Stats */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">5</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">
+                {skillsData[0].skills.length}
+              </div>
               <div className="text-gray-600 text-sm uppercase tracking-wide">
                 Frontend
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-3xl font-bold text-green-600 mb-2">5</div>
+              <div className="text-3xl font-bold text-green-600 mb-2">
+                {skillsData[1].skills.length}
+              </div>
               <div className="text-gray-600 text-sm uppercase tracking-wide">
                 Backend
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-3xl font-bold text-purple-600 mb-2">2</div>
+              <div className="text-3xl font-bold text-purple-600 mb-2">
+                {skillsData[2].skills.length}
+              </div>
               <div className="text-gray-600 text-sm uppercase tracking-wide">
                 Learning
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-3xl font-bold text-orange-600 mb-2">8</div>
+              <div className="text-3xl font-bold text-orange-600 mb-2">
+                {skillsData[3].skills.length}
+              </div>
               <div className="text-gray-600 text-sm uppercase tracking-wide">
                 Tools
               </div>
