@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import myLinks from "./constants/socialLinks";
+import myLinks from "../constants/socialLinks";
 import { useLocation } from "react-router-dom";
 import { console } from "inspector";
 
@@ -17,8 +17,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 text-white">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <div className="flex items-center space-x-4">
-          <img src="/favicon.ico" alt="Logo" className="h-8" />
-          <a href="#" className="block text-xl font-bold">
+          <img src="/favicon.ico" alt="Logo" className="h-6 sm:h-8" />
+          <a href="#" className="block text-md sm:text-xl font-bold">
             &lt;Sherif HodHod&gt;
           </a>
         </div>

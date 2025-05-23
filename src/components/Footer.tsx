@@ -1,5 +1,5 @@
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
-import myLinks from "./constants/socialLinks";
+import myLinks from "../constants/socialLinks";
 
 const Footer = () => {
   return (

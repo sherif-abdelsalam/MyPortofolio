@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, ChevronDown, Eye } from "lucide-react";
 import { useEffect, useState, useCallback, useMemo, memo } from "react";
-import myLinks from "./constants/socialLinks";
+import myLinks from "../constants/socialLinks";
 
 const Hero = () => {
   const [typedText, setTypedText] = useState("");

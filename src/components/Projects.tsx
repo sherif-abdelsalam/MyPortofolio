@@ -1,10 +1,23 @@
 import { useState, useEffect, useMemo } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
-import { projects, type Project } from "./constants/projectsData";
+import {
+  ArrowRight,
+  ArrowUpToLine,
+  ChevronLeft,
+  ChevronRight,
+  View,
+} from "lucide-react";
+import { projects, type Project } from "../constants/projectsData";
 
-const ProjectCard = ({ title, description, tech, image, link }: Project) => (
+const ProjectCard = ({
+  title,
+  description,
+  tech,
+  image,
+  link,
+  demo,
+}: Project) => (
   <Card className="overflow-hidden group">
     <div className="h-64 overflow-hidden">
       <div
@@ -25,19 +38,34 @@ const ProjectCard = ({ title, description, tech, image, link }: Project) => (
           </span>
         ))}
       </div>
-      <Button
-        variant="outline"
-        className="border-black hover:bg-black hover:text-white transition-colors"
-      >
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center"
+      <div className="flex items-start justify-between">
+        <Button
+          variant="outline"
+          className="border-black hover:bg-black hover:text-white transition-colors"
         >
-          View Project <ArrowRight className="ml-2 h-4 w-4" />
-        </a>
-      </Button>
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
+            Github <ArrowRight className="ml-2 h-4 w-4" />
+          </a>
+        </Button>
+
+        {demo && (
+          <Button className="bg-orange-600 hover:bg-orange-700 text-white transition-colors">
+            <a
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center ml-4"
+            >
+              Live Demo <ArrowUpToLine className="ml-2 h-4 w-4" />
+            </a>
+          </Button>
+        )}
+      </div>
     </CardContent>
   </Card>
 );
@@ -104,7 +132,7 @@ const Projects = () => {
   return (
     <section id="portfolio" className="py-20 px-6 bg-white">
       <div className="container mx-auto text-center mb-16">
-        <div className="section-title mx-auto">PORTFOLIO</div>
+        <div className="section-title mx-auto">Projects</div>
         <p className="mt-8 max-w-3xl mx-auto text-gray-600">
           Here are some of the projects I've built. Each project demonstrates
           different skills and technologies.

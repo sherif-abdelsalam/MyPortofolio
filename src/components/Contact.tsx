@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, Phone, MapPin, Loader2 } from "lucide-react";
-import myLinks from "./constants/socialLinks";
+import myLinks from "../constants/socialLinks";
 import { sendEmail } from "../services/emailService";
 
 const Contact = () => {

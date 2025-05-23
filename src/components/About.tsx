@@ -1,5 +1,5 @@
-import { aboutContent } from "./constants/aboutContent";
-import myLinks from "./constants/socialLinks";
+import { aboutContent } from "../constants/aboutContent";
+import myLinks from "../constants/socialLinks";
 import { Button } from "./ui/button";
 
 const About = () => {
