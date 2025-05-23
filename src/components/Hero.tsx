@@ -58,7 +58,7 @@ const Hero = () => {
           </span>
         </div>
 
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-4xl mb-8 sm:mb-10 md:mb-12 mx-auto leading-relaxed px-2 font-light">
+        <p className="text-lg md:text-2xl text-gray-700 max-w-4xl mb-8 sm:mb-10 md:mb-12 mx-auto leading-relaxed px-2 font-light">
           I'm a software developer specializing in building{" "}
           <span className="text-orange-600 font-semibold bg-orange-50 px-1 rounded">
             full stack applications
@@ -89,7 +89,7 @@ const Hero = () => {
             href={myLinks.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 font-semibold bg-orange-600 text-white px-6 py-3 border-2 border-orange-600 hover:bg-white hover:text-orange-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2"
+            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 font-semibold bg-orange-600 text-white px-6 py-3 sm:py-2 border-2 border-orange-600 hover:bg-white hover:text-orange-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2"
           >
             <Eye size={20} />
             View Resume
@@ -104,10 +104,7 @@ const Hero = () => {
             className="group text-gray-600 hover:text-orange-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 p-2"
             aria-label="GitHub Profile"
           >
-            <Github
-              size={28}
-              className="sm:w-8 sm:h-8 group-hover:drop-shadow-md"
-            />
+            <Github size={28} className="sm:w-6 group-hover:drop-shadow-md" />
           </a>
           <a
             href={myLinks.linkedin}
@@ -116,20 +113,14 @@ const Hero = () => {
             className="group text-gray-600 hover:text-orange-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 p-2"
             aria-label="LinkedIn Profile"
           >
-            <Linkedin
-              size={28}
-              className="sm:w-8 sm:h-8 group-hover:drop-shadow-md"
-            />
+            <Linkedin size={28} className="sm:w-6 group-hover:drop-shadow-md" />
           </a>
           <a
             href={myLinks.email}
             className="group text-gray-600 hover:text-orange-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 p-2"
             aria-label="Email Contact"
           >
-            <Mail
-              size={28}
-              className="sm:w-8 sm:h-8 group-hover:drop-shadow-md"
-            />
+            <Mail size={28} className="sm:w-6 group-hover:drop-shadow-md" />
           </a>
         </div>
       </div>
