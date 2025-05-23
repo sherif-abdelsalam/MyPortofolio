@@ -58,7 +58,7 @@ const Hero = () => {
           </span>
         </div>
 
-        <p className="text-lg md:text-2xl text-gray-700 max-w-4xl mb-8 sm:mb-10 md:mb-12 mx-auto leading-relaxed px-2 font-light">
+        <p className="text-sm  md:text-2xl text-gray-700 max-w-4xl mb-8 sm:mb-10 md:mb-12 mx-auto leading-relaxed px-2 font-light">
           I'm a software developer specializing in building{" "}
           <span className="text-orange-600 font-semibold bg-orange-50 px-1 rounded">
             full stack applications
@@ -70,17 +70,17 @@ const Hero = () => {
           development.
         </p>
 
-        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-10 md:mb-12 justify-center items-center max-w-2xl mx-auto">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-10 md:mb-12 justify-center items-center max-w-2xl mx-auto text-sm sm:text-lg">
           <a
             href="#contact"
-            className="group w-full sm:w-auto inline-flex items-center justify-center border-2 border-slate-900 px-6 py-3 font-medium text-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
+            className="group w-full sm:w-auto inline-flex items-center justify-center border-2 border-slate-900 px-6 py-2 sm:py-3 font-medium text-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
           >
             CONTACT ME
           </a>
 
           <a
             href="#portfolio"
-            className="group w-full sm:w-auto inline-flex items-center justify-center border-2 border-slate-900 bg-slate-900 text-white px-6 py-3 font-medium hover:bg-white hover:text-slate-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
+            className="group w-full sm:w-auto inline-flex items-center justify-center border-2 border-slate-900 bg-slate-900 text-white px-6 py-2 sm:py-3 font-medium hover:bg-white hover:text-slate-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
           >
             VIEW MY WORK
           </a>
@@ -89,7 +89,7 @@ const Hero = () => {
             href={myLinks.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 font-semibold bg-orange-600 text-white px-6 py-3 sm:py-2 border-2 border-orange-600 hover:bg-white hover:text-orange-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2"
+            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 font-semibold bg-orange-600 text-white px-6 py-2 sm:py-3 border-2 border-orange-600 hover:bg-white hover:text-orange-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2"
           >
             <Eye size={20} />
             View Resume
