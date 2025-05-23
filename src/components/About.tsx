@@ -22,7 +22,7 @@ const About = () => {
             <h3 className="text-xl font-bold text-orange-600 dark:text-orange-400">
               {aboutContent.introduction.title}
             </h3>
-            <div className="text-lg space-y-4 text-gray-700 dark:text-gray-300 transition-colors duration-300">
+            <div className="text-md space-y-4 text-gray-700 dark:text-gray-300 transition-colors duration-300">
               {aboutContent.introduction.paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
@@ -34,7 +34,7 @@ const About = () => {
             <h3 className="text-xl font-bold text-orange-600 dark:text-orange-400">
               {aboutContent.background.title}
             </h3>
-            <div className="text-lg space-y-6 text-gray-700 dark:text-gray-300 transition-colors duration-300">
+            <div className="text-md space-y-6 text-gray-700 dark:text-gray-300 transition-colors duration-300">
               {aboutContent.background.experience.map((item, index) => (
                 <div key={index} className={lineClassName}>
                   <BulletPoint />
