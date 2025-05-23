@@ -16,13 +16,13 @@ const About = () => {
             ABOUT ME
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
           {/* Left Column - Get to know me */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-orange-600 dark:text-orange-400">
+            <h3 className="text-xl font-bold text-orange-600 dark:text-orange-400">
               {aboutContent.introduction.title}
             </h3>
-            <div className="text-xl space-y-4 text-gray-700 dark:text-gray-300 transition-colors duration-300">
+            <div className="text-lg space-y-4 text-gray-700 dark:text-gray-300 transition-colors duration-300">
               {aboutContent.introduction.paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
@@ -31,10 +31,10 @@ const About = () => {
 
           {/* Right Column - Background */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-orange-600 dark:text-orange-400">
+            <h3 className="text-xl font-bold text-orange-600 dark:text-orange-400">
               {aboutContent.background.title}
             </h3>
-            <div className="text-xl space-y-6 text-gray-700 dark:text-gray-300 transition-colors duration-300">
+            <div className="text-lg space-y-6 text-gray-700 dark:text-gray-300 transition-colors duration-300">
               {aboutContent.background.experience.map((item, index) => (
                 <div key={index} className={lineClassName}>
                   <BulletPoint />

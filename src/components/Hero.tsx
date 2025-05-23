@@ -55,11 +55,11 @@ const Hero = () => {
           Hello there, I'm
         </p>
 
-        <h1 className="hero-name text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-gray-100 dark:via-white dark:to-gray-100 bg-clip-text text-transparent leading-tight animate-slide-up">
+        <h1 className="hero-name text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-gray-100 dark:via-white dark:to-gray-100 bg-clip-text text-transparent leading-tight animate-slide-up">
           Sherif HodHod
         </h1>
 
-        <div className="hero-subtitle text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-6 sm:mb-8 text-gray-500 dark:text-gray-400 min-h-[40px] sm:min-h-[50px] md:min-h-[60px] lg:min-h-[70px] leading-relaxed transition-colors duration-300">
+        <div className="hero-subtitle text-xl sm:text-2xl md:text-3xl lg:text-5xl font-medium mb-6 sm:mb-8 text-gray-500 dark:text-gray-400 min-h-[40px] sm:min-h-[50px] md:min-h-[60px] lg:min-h-[70px] leading-relaxed transition-colors duration-300">
           <span className="inline-block">
             {typedText}
             <span className="animate-pulse text-orange-600 dark:text-orange-400 font-bold">
@@ -68,7 +68,7 @@ const Hero = () => {
           </span>
         </div>
 
-        <p className="text-sm md:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mb-8 sm:mb-10 md:mb-12 mx-auto leading-relaxed px-2 font-light transition-colors duration-300">
+        <p className="text-sm md:text-xl text-gray-700 dark:text-gray-300 max-w-4xl mb-8 sm:mb-10 md:mb-12 mx-auto leading-relaxed px-2 font-light transition-colors duration-300">
           I'm a software developer specializing in building{" "}
           <span className="text-orange-600 dark:text-orange-400 font-semibold bg-orange-50 dark:bg-orange-900/30 px-1 rounded">
             full stack applications
@@ -80,7 +80,7 @@ const Hero = () => {
           development.
         </p>
 
-        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-10 md:mb-12 justify-center items-center max-w-2xl mx-auto text-sm sm:text-lg">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8 justify-center items-center max-w-2xl mx-auto text-sm ">
           <a
             href={myLinks.resume}
             target="_blank"
@@ -106,7 +106,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="flex space-x-6 sm:space-x-8 mb-8 sm:mb-12 justify-center">
+        <div className="flex space-x-4 mb-8 sm:mb-12 md:mb-16 justify-center">
           <a
             href={myLinks.github}
             target="_blank"

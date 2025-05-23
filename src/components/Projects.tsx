@@ -151,7 +151,7 @@ const Projects = () => {
         {/* Navigation Buttons */}
         <button
           onClick={prevSlide}
-          className="absolute -left-4 top-1/2 bg-orange-600 dark:bg-orange-500 hover:scale-110 rounded-full p-3 transition-all duration-300 z-10 border-[6px] border-white dark:border-gray-900"
+          className="absolute -left-4 top-1/3 bg-orange-600 dark:bg-orange-500 hover:scale-110 rounded-full p-3 transition-all duration-300 z-10 border-[6px] border-white dark:border-gray-900"
           aria-label="Previous slide"
         >
           <ChevronLeft className="w-6 h-6 text-white" />
@@ -159,7 +159,7 @@ const Projects = () => {
 
         <button
           onClick={nextSlide}
-          className="absolute -right-4 top-1/2 bg-orange-600 dark:bg-orange-500 hover:scale-110 rounded-full p-3 transition-all duration-300 z-10 border-[6px] border-white dark:border-gray-900"
+          className="absolute -right-4 top-1/3 bg-orange-600 dark:bg-orange-500 hover:scale-110 rounded-full p-3 transition-all duration-300 z-10 border-[6px] border-white dark:border-gray-900"
           aria-label="Next slide"
         >
           <ChevronRight className="w-6 h-6 text-white" />

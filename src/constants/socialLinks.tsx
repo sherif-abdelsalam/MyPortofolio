@@ -7,7 +7,7 @@ const myLinks = {
   phone: "+20 109 5289 206",
   location: "Egypt",
   resume:
-    "https://drive.google.com/file/d/1RzaKfTTdnT042vnMgVTbafg-mXgsHRGr/view?usp=sharing",
+    "https://drive.google.com/file/d/1jSljvu6rOTLx6MLx6nZsoTpWF_Y7fO-B/view?usp=sharing",
 };
 
 export default myLinks;
