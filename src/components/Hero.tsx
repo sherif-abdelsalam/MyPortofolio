@@ -56,7 +56,7 @@ const Hero = () => {
         </p>
 
         <h1 className="hero-name text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-gray-100 dark:via-white dark:to-gray-100 bg-clip-text text-transparent leading-tight animate-slide-up">
-          Sherif HodHod
+          Sherif Abdelsalam
         </h1>
 
         <div className="hero-subtitle text-xl sm:text-2xl md:text-3xl lg:text-5xl font-medium mb-6 sm:mb-8 text-gray-500 dark:text-gray-400 min-h-[40px] sm:min-h-[50px] md:min-h-[60px] lg:min-h-[70px] leading-relaxed transition-colors duration-300">

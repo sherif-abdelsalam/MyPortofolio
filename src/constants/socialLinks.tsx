@@ -4,7 +4,7 @@ const myLinks = {
   email: "mailto:sherif.abdelsalam.111@gmail.com",
   phone: "+20 109 5289 206",
   location: "Egypt",
-  resume: "https://www.1resume.app/r/sherif-hodhod-resume",
+  resume: "https://www.1resume.app/r/sherif-abdelsalam",
 };
 
 export default myLinks;

@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
 
           <div className="text-sm text-gray-400 dark:text-gray-500 transition-colors duration-300">
-            &copy; {new Date().getFullYear()} Sherif HodHod. All Rights
+            &copy; {new Date().getFullYear()} Sherif Abdelsalam. All Rights
             Reserved.
           </div>
         </div>

@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <img src="/favicon.ico" alt="Logo" className="h-6 sm:h-8" />
           <a href="#" className="block text-md sm:text-xl font-bold">
-            &lt;Sherif HodHod&gt;
+            &lt;Sherif Abdelsalam&gt;
           </a>
         </div>
 

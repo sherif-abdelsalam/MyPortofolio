@@ -34,6 +34,6 @@ export const projects: Project[] = [
     image:
       "https://res.cloudinary.com/dvfebj6lc/image/upload/v1748025563/hamza-nouasria--3pvRUfQc-c-unsplash_g1odkl.jpg",
     link: "https://github.com/sherif-abdelsalam/Event-Booking-App",
-    demo: "https://event-booking-app-eta.vercel.app/",
+    demo: "https://event-booking-system-sandy-beta.vercel.app/",
   },
 ];
